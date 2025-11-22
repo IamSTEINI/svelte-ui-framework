@@ -30,6 +30,8 @@
 		background-color: #232329;
 		border-radius: 5px;
 		border: 1px #454551 solid;
+        margin-right: 5px;
+        margin-top: 5px;
 	}
 	article:hover {
 		cursor: pointer;

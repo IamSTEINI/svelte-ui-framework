@@ -1,5 +1,6 @@
 <script lang="ts">
 	import buttonImg from '$lib/images/button.png';
+	import linkImg from '$lib/images/link.png';
 	import Component from '../components/Component.svelte';
 
 	type Item = {
@@ -15,7 +16,13 @@
 			description: 'Button style with a nice little detail to improve your buttons!',
 			path: '/components/button',
 			image: buttonImg
-		}
+		},
+		{
+			name: 'Link',
+			description: 'Button style with a nice little detail to improve your buttons!',
+			path: '/components/link',
+			image: linkImg
+		},
 	];
 </script>
 
@@ -33,5 +40,11 @@
 <style>
 	section {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		align-content: start;
 	}
 </style>
