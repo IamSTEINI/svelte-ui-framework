@@ -11,6 +11,7 @@ h3 {
 
 span,
 a,
+pre,
 p {
 	font-family: 'Rubik Variable', sans-serif;
 	color: #fff3e9;
@@ -32,19 +33,14 @@ button {
 	padding: 10px;
 	cursor: pointer;
 	position: relative;
-	transition:
-		transform 100ms,
-		box-shadow 180ms,
-		background-color 180ms,
-		border-color 180ms,
-		color 180ms;
-	will-change: transform, box-shadow;
+	transition: all 180ms;
+	will-change: transform;
 	overflow: visible;
 }
 
 button > * {
-	position: relative;
 	z-index: 1;
+	position: relative;
 }
 
 button:hover {

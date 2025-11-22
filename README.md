@@ -1,38 +1,8 @@
-# sv
+# THE SVELTE UI FRAMEWORK
+A library of components made with Svelte.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+On this website you can search components, click on them, and copy their code!
 
-## Creating a project
+In this project I wanted to create a UI framework — something to speed up development, but this wasn't my only goal: I wanted to learn Svelte too!
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+A HACKCLUB SIEGE PROJECT

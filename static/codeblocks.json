@@ -1,0 +1,6 @@
+{
+  "button": {
+    "11": "button {\n\toutline: none;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-items: center;\n\tbackground-color: #232329;\n\tcolor: #fff3e9;\n\tborder-radius: 5px;\n\tborder: 1px #454551 solid;\n\tpadding: 10px;\n\tcursor: pointer;\n\tposition: relative;\n\ttransition: all 180ms;\n\twill-change: transform;\n\toverflow: visible;\n}\n\nbutton > * {\n\tz-index: 1;\n\tposition: relative;\n}\n\nbutton:hover {\n\tbackground: linear-gradient(180deg, #2b2b31 0%, #232329 100%);\n\tborder-color: #6b6b75;\n\ttransform: translateY(-3px) scale(1.02);\n}\n\nbutton:active {\n\tborder-color: #454551;\n\ttransform: translateY(0px) scale(1.02);\n}\n\nbutton:hover::after {\n\topacity: 1;\n\ttransform: translate(-50%, -50%) scale(1.02);\n}",
+    "12": "<button>\n\t\t\tGet started\t\n</button>"
+  }
+}

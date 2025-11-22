@@ -2,7 +2,7 @@
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import './layout.css';
-	
+
 	let { children } = $props();
 </script>
 
@@ -25,6 +25,10 @@
 		margin-top: 15px;
 	}
 	.display-childs {
+		margin-top: 25px;
 		height: 95vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 </style>
