@@ -10,7 +10,7 @@
 	</h1>
 	<div class="row">
 		<a href="/about">What's this?</a>
-		<button>
+		<button on:click={() => alert("Idk why you're clicking this. Choose a component and go!")}>
 			Get started
 			<Icon style="font-size: large;" icon="material-symbols:keyboard-double-arrow-right-rounded" />
 		</button>
