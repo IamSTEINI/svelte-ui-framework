@@ -7,5 +7,9 @@
 </svelte:head>
 
 <section>
-	<p class="font-bold text-4xl">Test</p>
+	<p class="">Test</p>
 </section>
+
+<style>
+
+</style>
