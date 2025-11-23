@@ -9,6 +9,7 @@
 		THE SVELTE UI FRAMEWORK
 	</h1>
 	<div class="row">
+		<a href="/usage">How to use?</a>
 		<a href="/about">What's this?</a>
 		<button on:click={() => alert("Idk why you're clicking this. Choose a component and go!")}>
 			Get started

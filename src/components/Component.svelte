@@ -26,7 +26,7 @@
 	article {
 		padding: 15px;
 		width: 350px;
-        height: 270px;
+        height: fit-content;
 		background-color: #232329;
 		border-radius: 5px;
 		border: 1px #454551 solid;
@@ -42,6 +42,7 @@
 	img {
 		display: block;
 		width: 100%;
+		/* max-height: 135px; */
 		margin-bottom: 0.5rem;
 		object-fit: cover;
 		border-radius: 5px;

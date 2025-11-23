@@ -44,6 +44,11 @@
 		<CodeBlock codeblock={{ file: 'style.css', code: cssCode }} />
 		<h2>Svelte</h2>
 		<CodeBlock codeblock={{ file: 'Link.svelte', code: svelteCode }} />
+	{:else if name.toLowerCase() == 'card'}
+		<h2>CSS</h2>
+		<CodeBlock codeblock={{ file: 'style.css', code: cssCode }} />
+		<h2>Svelte</h2>
+		<CodeBlock codeblock={{ file: 'Link.svelte', code: svelteCode }} />
 	{/if}
 </section>
 

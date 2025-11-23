@@ -1,6 +1,7 @@
 <script lang="ts">
 	import buttonImg from '$lib/images/button.png';
 	import linkImg from '$lib/images/link.png';
+	import cardImg from '$lib/images/card.png';
 	import Component from '../components/Component.svelte';
 
 	type Item = {
@@ -19,10 +20,17 @@
 		},
 		{
 			name: 'Link',
-			description: 'Button style with a nice little detail to improve your buttons!',
+			description:
+				'Link style with a subtle underline and smooth hover animation!',
 			path: '/components/link',
 			image: linkImg
 		},
+		{
+			name: 'Card Component',
+			description: 'Button style with a nice little detail to improve your buttons!',
+			path: '/components/card',
+			image: cardImg
+		}
 	];
 </script>
 
@@ -44,7 +52,7 @@
 		flex-wrap: wrap;
 		gap: 0.5rem;
 		justify-content: center;
-		align-items: center;
+		align-items: start;
 		align-content: start;
 	}
 </style>
