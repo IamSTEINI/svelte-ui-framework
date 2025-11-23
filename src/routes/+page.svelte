@@ -3,6 +3,7 @@
 	import linkImg from '$lib/images/link.png';
 	import cardImg from '$lib/images/card.png';
 	import Component from '../components/Component.svelte';
+	import { onMount } from 'svelte';
 
 	type Item = {
 		name: string;
@@ -20,8 +21,7 @@
 		},
 		{
 			name: 'Link',
-			description:
-				'Link style with a subtle underline and smooth hover animation!',
+			description: 'Link style with a subtle underline and smooth hover animation!',
 			path: '/components/link',
 			image: linkImg
 		},
@@ -32,6 +32,26 @@
 			image: cardImg
 		}
 	];
+
+	let query = '';
+	let filtered: Item[] = items;
+	onMount(() => {
+		const inputEl = document.querySelector<HTMLInputElement>(
+			'input[placeholder="Search the svelte ui framework..."]'
+		);
+		if (!inputEl) return;
+
+		const update = () => {
+			query = inputEl.value;
+			const q = query.trim().toLowerCase();
+			filtered = q ? items.filter((i) => i.name.toLowerCase().includes(q)) : items;
+		};
+
+		inputEl.addEventListener('input', update);
+		update();
+
+		return () => inputEl.removeEventListener('input', update);
+	});
 </script>
 
 <svelte:head>
@@ -40,7 +60,13 @@
 </svelte:head>
 
 <section class="w-full max-w-[800px]">
-	{#each items as item}
+	<div style="width:100%; display:flex; justify-content:center;">
+		<input
+			type="text"
+			style="width: 100%;max-width: 800px;"
+			placeholder="Search the svelte ui framework..." />
+	</div>
+	{#each filtered as item}
 		<Component {item} />
 	{/each}
 </section>
@@ -54,5 +80,14 @@
 		justify-content: center;
 		align-items: start;
 		align-content: start;
+	}
+	input {
+		background-color: #232329;
+		border-radius: 5px;
+		border: 1px #454551 solid;
+		color: #fff3e9;
+		padding: 10px;
+		font-size: 16px;
+		outline: none;
 	}
 </style>
