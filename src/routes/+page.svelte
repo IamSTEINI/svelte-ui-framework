@@ -2,6 +2,7 @@
 	import buttonImg from '$lib/images/button.png';
 	import linkImg from '$lib/images/link.png';
 	import cardImg from '$lib/images/card.png';
+	import inputImg from '$lib/images/input.png';
 	import Component from '../components/Component.svelte';
 	import { onMount } from 'svelte';
 
@@ -26,10 +27,16 @@
 			image: linkImg
 		},
 		{
-			name: 'Card Component',
+			name: 'Card',
 			description: 'Button style with a nice little detail to improve your buttons!',
 			path: '/components/card',
 			image: cardImg
+		},
+		{
+			name: 'Input',
+			description: 'Stylized input with a cool icon instead of just one boring input!',
+			path: '/components/input',
+			image: inputImg
 		}
 	];
 
